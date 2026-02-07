@@ -1,14 +1,14 @@
-from lerobot.cameras.opencv.configuration_opencv import OpenCVCameraConfig
-from lerobot.datasets.lerobot_dataset import LeRobotDataset
-from lerobot.datasets.utils import hw_to_dataset_features
-from lerobot.robots.so100_follower import SO100Follower, SO100FollowerConfig
-from lerobot.teleoperators.so100_leader.config_so100_leader import SO100LeaderConfig
-from lerobot.teleoperators.so100_leader.so100_leader import SO100Leader
-from lerobot.utils.control_utils import init_keyboard_listener
-from lerobot.utils.utils import log_say
-from lerobot.utils.visualization_utils import init_rerun
-from lerobot.scripts.lerobot_record import record_loop
-from lerobot.processor import make_default_processors
+from cameras.opencv.configuration_opencv import OpenCVCameraConfig
+from .datasets.lerobot_dataset import LeRobotDataset 
+from .datasets.utils import hw_to_dataset_features
+from robots.so_follower import SO100Follower, SO100FollowerConfig
+from teleoperators.so_leader.config_so_leader import SO100LeaderConfig
+from teleoperators.so_leader.so_leader import SO100Leader
+from utils.control_utils import init_keyboard_listener
+from utils.utils import log_say
+from utils.visualization_utils import init_rerun
+from scripts.lerobot_record import record_loop
+from processor import make_default_processors
 
 NUM_EPISODES = 5
 FPS = 30
