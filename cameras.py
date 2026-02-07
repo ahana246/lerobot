@@ -6,8 +6,8 @@ from lerobot.cameras.configs import ColorMode, Cv2Rotation
 config = OpenCVCameraConfig(
     index_or_path=0,
     fps=30,
-    width=1920,
-    height=1080,
+    width=1280,
+    height=720,
     color_mode=ColorMode.RGB,
     rotation=Cv2Rotation.NO_ROTATION
 )
